@@ -15,23 +15,34 @@ const Home = (props) => {
 		<div>
 			<h1 className="text-center mt-5">SIMPLE COUNTER WITH REACT</h1>
 			<div className="row d-flex justify-content-center alig">
-				<div className="col-2 reloj rounder-border" id="columnas">
+				<div className="col-2 reloj " id="columnas">
 					<i class="far fa-clock"></i>
 				</div>
-				<div className="col-2 mil rounder-border" id="columnas">
+				<div className="col-1 " id="columnas">
+					{numeros[numeros.length - 6]}
+				</div>
+				<div className="col-1 " id="columnas">
+					{numeros[numeros.length - 5]}
+				</div>
+				<div className="puntos" id="puntos">
+					:
+				</div>
+				<div className="col-1 mil " id="columnas">
 					{numeros[numeros.length - 4]}
 				</div>
-				<div className="col-2 centenas rounder-border" id="columnas">
+				<div className="col-1 centenas " id="columnas">
 					{numeros[numeros.length - 3]}
 				</div>
-				<div className=" col-2 decenas" id="columnas">
+				<div className="puntos" id="puntos">
+					:
+				</div>
+				<div className=" col-1 decenas" id="columnas">
 					{numeros[numeros.length - 2]}
 				</div>
-				<div className="col-2 unidades" id="columnas">
+				<div className="col-1 unidades" id="columnas">
 					{numeros[numeros.length - 1]}
 				</div>
 			</div>
-			<div className="foto"></div>
 		</div>
 	);
 };
