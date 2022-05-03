@@ -14,9 +14,8 @@ setInterval(function () {
 	ReactDOM.render(
 		<Home segundos={contador} />, // en este caso el props de HOMe van a ser los segundos.
 		document.querySelector("#app")
-        
 	);
-    contador += 1;
+	contador += 1;
 }, 500); //quiero que cada segundo que pase quiero renderizar el DOM, por lo tanto debo colocar ReactDOM dentro de la función setInterval.
 //para que mi HOME me renderice el contador necesito utilizar los "props" que en este caso estamos hablando de segundos
 //render your react application
